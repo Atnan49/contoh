@@ -1,0 +1,26 @@
+/                              
+├─ .env                       # Variabel environment (DB, Gateway)
+├─ config.php                 # Koneksi database & setting
+├─ public/                    # Aset publik (CSS, JS)
+│   ├─ css/
+│   │   └─ styles.css
+│   └─ js/
+│       └─ scripts.js
+├─ index.php                  # redirect ke login atau dashboard
+├─ auth/
+│   ├─ login.php              # form login
+│   ├─ authenticate.php       # proses login
+│   └─ logout.php             # proses logout
+├─ admin/
+│   ├─ header.php             # include untuk auth check + header nav
+│   ├─ footer.php             # include footer
+│   ├─ dashboard.php          # beranda admin
+│   ├─ students.php           # CRUD data siswa
+│   ├─ student_create.php     # form tambah siswa
+│   ├─ student_save.php       # proses tambah/edit siswa
+│   ├─ student_delete.php     # hapus siswa
+│   ├─ payments.php           # daftar pembayaran & tombol bayar
+│   ├─ payment_form.php       # form input pembayaran
+│   └─ payment_save.php       # proses simpan & redirect ke gateway
+└─ sql/
+    └─ schema.sql            # skrip pembuatan tabel
